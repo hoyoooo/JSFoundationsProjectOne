@@ -47,8 +47,12 @@ console.log(evens);
 
 // sumOdds
 sum = sumOdds(numbers);
+console.log("\n--------------------------")
+console.log("SUM ODDS:");
 console.log(sum);
 
 // makePairs
 let pairs = makePairs(instructors);
+console.log("\n--------------------------")
+console.log("MAKE PAIRS:");
 console.log(pairs);
