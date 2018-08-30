@@ -4,14 +4,7 @@
  * Returns an array of the even numbers
  */
 function filterEvens(numbers) {
-	let evens = []
-	for(let i=0; i<numbers.length; i++) {
-		if (numbers[i]%2 === 0) {
-			evens.push(numbers[i]);
-		}
-	}
-
-	return evens;
+	// your code goes here!
 }
 
 /**
@@ -20,14 +13,7 @@ function filterEvens(numbers) {
  * Returns an array of the odd numbers
  */
 function filterOdds(numbers) {
-	let odds = []
-	for(let i=0; i<numbers.length; i++) {
-		if (numbers[i]%2 !== 0) {
-			odds.push(numbers[i]);
-		}
-	}
-
-	return odds;
+	// your code goes here!
 }
 
 /**
@@ -35,12 +21,7 @@ function filterOdds(numbers) {
  * Returns the sum of the odd numbers in that array
  */
 function sumOdds(numbers) {
-	let odds = filterOdds(numbers);
-	let sum = 0;
-	for (let i=0; i<odds.length; i++) {
-		sum += odds[i];
-	}
-	return sum;
+	// your code goes here!
 }
 
 /**
@@ -51,21 +32,7 @@ function sumOdds(numbers) {
  * Returns the array of pairs
  */
 function makePairs(names) {
-	let result = [];
-	let pairs = [];
-
-	while(names.length > 1) {
-		pairs.push(names.pop());
-		pairs.push(names.pop());
-		result.push(pairs);
-		pairs = [];
-	}
-
-	if (names.length) {
-		result.push([names.pop()])
-	}
-
-	return result;
+	// your code goes here!
 }
 
 /**************************************************
