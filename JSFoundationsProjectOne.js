@@ -2,6 +2,12 @@
  * Receives an array of numbers
  * Filters out odd numbers
  * Returns an array of the even numbers
+ *
+ * Example usage:
+ *
+ *     filterEvens([1, 2, 3, 4, 5])
+ *     returns [2, 4]
+ *
  */
 function filterEvens(numbers) {
 	let evens = []
@@ -18,6 +24,12 @@ function filterEvens(numbers) {
  * Receives an array of numbers
  * Filters out even numbers
  * Returns an array of the odd numbers
+ *
+ * Example usage:
+ *
+ *     filterOdds([1, 2, 3, 4, 5])
+ *     returns [1, 3, 5]
+ *
  */
 function filterOdds(numbers) {
 	let odds = []
@@ -33,6 +45,12 @@ function filterOdds(numbers) {
 /**
  * Receives an array of numbers
  * Returns the sum of the odd numbers in that array
+ *
+ * Example usage:
+ *
+ *     sumOdds([1, 2, 3, 4, 5])
+ *     returns 9
+ *
  */
 function sumOdds(numbers) {
 	let odds = filterOdds(numbers);
@@ -49,6 +67,15 @@ function sumOdds(numbers) {
  * Order of names and pairs doesn't matter
  * if the length of the array is odd, the last element is in an array on its own
  * Returns the array of pairs
+ *
+ * Example usage:
+ * 
+ *     pairs(['Asis', 'Hamsa', 'Fawas', 'Mishmish', 'Hussein'])
+ *     returns [['Mishmish', 'Fawas'], ['Asis', 'Hussein'], ['Hamsa']]
+ * 
+ *     pairs(['Aziz', 'Hamza', 'Fawaz', 'Mishmish'])
+ *     returns [['Mishmish', 'Fawaz'], ['Aziz', 'Hamza']]
+ * 
  */
 function makePairs(names) {
 	let result = [];
