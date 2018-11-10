@@ -11,6 +11,13 @@
  */
 function filterEvens(numbers) {
 	// your code goes here!
+	var i;
+	let even = [];
+    for (i = 0; i < numbers.length; i++) {
+	   if (numbers[i] % 2 == 0 )
+	       even.push(numbers[i]);
+	} 
+	return even;
 }
 
 /**
@@ -26,6 +33,13 @@ function filterEvens(numbers) {
  */
 function filterOdds(numbers) {
 	// your code goes here!
+	var i;
+	let odd = [];
+    for (i = 0; i < numbers.length; i++) {
+	   if (numbers[i] % 2 == 1 )
+	       odd.push(numbers[i]);
+	} 
+	return odd;
 }
 
 /**
@@ -40,6 +54,13 @@ function filterOdds(numbers) {
  */
 function sumOdds(numbers) {
 	// your code goes here!
+	var i;
+	let odd = 0;
+    for (i = 0; i < numbers.length; i++) {
+	   if (numbers[i] % 2 == 1 )
+	       odd = numbers[i] + odd;
+	} 
+	return odd;
 }
 
 /**
@@ -60,6 +81,19 @@ function sumOdds(numbers) {
  */
 function makePairs(names) {
 	// your code goes here!
+	let i = 0;
+	let arr = [];
+	for (i = 0; i < names.length; i = i + 2) {
+        let tmp = [];
+		if (i < names.length){
+		tmp.push(names[i]);
+		if (i+1 < names.length){
+            tmp.push(names[i+1]);
+		}
+	  }
+	arr.push(tmp);
+	} 
+	return arr;
 }
 
 /**************************************************
@@ -70,13 +104,13 @@ let instructors = ["Hamza", "Mshary", "Aziz", "Hussein", "Fawaz"];
 
 // uncomment the following lines to run and test your code.
 // // filterEvens
-// evens = filterEvens(numbers);
-// console.log(evens);
+ evens = filterEvens(numbers);
+ console.log(evens);
 
 // // sumOdds
-// sum = sumOdds(numbers);
-// console.log(sum);
+ sum = sumOdds(numbers);
+ console.log(sum);
 
 // // makePairs
-// let pairs = makePairs(instructors);
-// console.log(pairs);
+ let pairs = makePairs(instructors);
+ console.log(pairs);
